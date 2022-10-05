@@ -15,26 +15,50 @@
         <main class="container">
             <header class="topo__pagina">
                 <h1>open music</h1>
-                <button>
-                    <img src="./src/assets/img/moon.png">
+                <button id="darkMode">
+                    <img id="iconDark" src="./src/assets/img/moon.png">
                 </button>
             </header>
             <section class="secao__tipos">
                 <h3>Gênero Musical</h3>
-                <div class="botoes__tipos">
-                    <button id="todos">Todos</button>
-                    <button id="pop">Pop</button>
-                    <button id="mpb">MPB</button>
-                    <button id="forro">Forró</button>
-                    <button id="samba">Samba</button>
-                    <button id="baiao">Baião</button>
-                    <button id="rap">Rap</button>
-                    <button id="hipHop">Hip-Hop</button>
-                    <button id="rock">Rock</button>
-                    <button id="reggae">Reggae</button>
-                    <button id="country">Coutry</button>
-                    <button id="gospel">Gospel</button>
-                </div>
+                <ul class="botoes__tipos">
+                    <li class="todos__tipos">
+                        <button id="todos">Todos</button>
+                    </li>
+                    <li class="todos__tipos">
+                        <button id="pop">Pop</button>
+                    </li>
+                    <li class="todos__tipos">
+                        <button id="mpb">MPB</button>
+                    </li>
+                    <li class="todos__tipos">
+                        <button id="forro">Forró</button>
+                    </li>
+                    <li class="todos__tipos">
+                        <button id="samba">Samba</button>
+                    </li>
+                    <li class="todos__tipos">
+                        <button id="baiao">Baião</button>
+                    </li>
+                    <li class="todos__tipos">
+                        <button id="rap">Rap</button>
+                    </li>
+                    <li class="todos__tipos">
+                        <button id="hipHop">Hip-Hop</button>
+                    </li>
+                    <li class="todos__tipos">
+                        <button id="rock">Rock</button>
+                    </li>
+                    <li class="todos__tipos">
+                        <button id="reggae">Reggae</button>
+                    </li>
+                    <li class="todos__tipos">
+                        <button id="country">Coutry</button>
+                    </li>
+                    <li class="todos__tipos">
+                        <button id="gospel">Gospel</button>
+                    </li>
+                </ul>
             </section>
             <section class="secao__preco">
                 <div class="div__preco">
@@ -42,24 +66,12 @@
                     <p>até R$ 240</p>
                 </div>
                 <div class="barra__preco">
-                    <p>barrinha</p>
+                    <input type="range">
                 </div>
             </section>
             <section class="container__produtos">
                 <h3>Albuns encontrados</h3>
-                <ul class="container__lista">
-                    <!---  <li class="lista__musicas">
-                        <img src="./src/assets/img/1.jpg">
-                        <div class="descricao__produto">
-                            <p>Scalene</p>
-                            <p>1970</p>
-                        </div>
-                        <h3>magnetic</h3>
-                        <div class="preco__produto">
-                            <span>R$ 89.0</span>
-                            <button id="comprar">Comprar</button>
-                        </div>
-                    </li>--></ul>
+                <ul id="lista__cards" class="container__lista"></ul>
             </section>
         </main>
     </body>

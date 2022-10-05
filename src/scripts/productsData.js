@@ -1,7 +1,7 @@
 const products = [
   {
     title: "Magnetite",
-    category: 1,
+    category: 8,
     price: 89.0,
     img: "./src/assets/img/1.jpg",
     band: "Scalene",
@@ -10,7 +10,7 @@ const products = [
   },
   {
     title: "Acabou o Chorare",
-    category: 2,
+    category: 3,
     price: 66.0,
     img: "./src/assets/img/2.jpg",
     band: "Novos Baianos",
@@ -19,7 +19,7 @@ const products = [
   },
   {
     title: "Nirvana Discografia",
-    category: 3,
+    category: 8,
     price: 50.0,
     img: "./src/assets/img/3.jpg",
     band: "Nirvava",
@@ -28,7 +28,7 @@ const products = [
   },
   {
     title: "Both Sides",
-    category: 4,
+    category: 1,
     price: 22.0,
     img: "./src/assets/img/4.jpg",
     band: "Phil Collins",

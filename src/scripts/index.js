@@ -1,9 +1,9 @@
 const ul = document.querySelector(".container__lista")
 
 function renderMusicas(array) {
-   
+
     array.forEach((element) => {
-       
+
         const li = document.createElement("li")
         li.classList.add("lista__musicas")
         li.id = element.id
@@ -43,4 +43,57 @@ function renderMusicas(array) {
 renderMusicas(products)
 
 
+function darkMode() {
+    const btnDarkMode = document.getElementById("darkMode")
+    const iconeDark = document.getElementById("iconDark")
+    const html = document.querySelector("html")
 
+    btnDarkMode.addEventListener("click", () => {
+        html.classList.toggle("dark__mode")
+        iconeDark.classList.toggle("text__white")
+
+        const darkPref = localStorage.getItem("darkmode")
+        if (!darkPref) {
+            localStorage.setItem("darkmode", true)
+        }
+
+        if (darkPref) {
+            localStorage.removeItem("darkmode")
+        }
+
+
+        if (iconeDark.classList.contains("text__white")) {
+            iconeDark.src = "./src/assets/img/sun.png"
+        } else {
+            iconeDark.src = "./src/assets/img/moon.png"
+        }
+    })
+}
+darkMode()
+
+function filtroMusicas() {
+    const btnTipos = document.querySelectorAll(".todos__tipos")
+    const listaCards = document.getElementById('lista__cards')
+
+    btnTipos.forEach(button => {
+        button.addEventListener("click", () => {
+            listaCards.innerHTML = ""
+            const filter = button.innerText
+
+            if (filter === "Todos") {
+                renderMusicas(products)
+            }
+            const filterMusicas = musicaFilter(filter)
+
+            renderMusicas(filterMusicas)
+        })
+    })
+
+
+    function musicaFilter(text) {
+        const musicasFiltra = products.filter(musicas => musicas.category ===
+            categories.indexOf(text))
+        return musicasFiltra
+    }
+}
+filtroMusicas()
