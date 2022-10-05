@@ -1,0 +1,186 @@
+.topo__pagina {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 3rem 0 2.7rem 0;
+    width: 100%;
+}
+
+.topo__pagina>h1 {
+    font-weight: 600;
+    font-size: var(--font-1);
+    line-height: 34px;
+
+}
+
+.topo__pagina>button {
+    background: var(--color-grey-8);
+    border-radius: var(--radius-1);
+    border: 1px solid var(--color-grey-8);
+    width: 32px;
+    height: 32px;
+
+}
+
+.topo__pagina>img {
+    width: 12px;
+    height: 14px;
+
+}
+
+.secao__tipos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.secao__tipos>h3 {
+    font-weight: 600;
+    font-size: var(--font-2);
+    line-height: 19px;
+    margin-bottom: 1.7rem;
+}
+
+.botoes__tipos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.botoes__tipos>button {
+    border: 1px solid var(--color-grey-8);
+    border-radius: var(--radius-1);
+    font-weight: 100;
+    font-size: var(--font-3);
+    background-color: var(--color-grey-8);
+    padding: 10px 5px;
+    line-height: 0px;
+}
+
+.botoes__tipos>button:hover {
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-9)
+}
+
+.secao__preco {
+    margin-top: 4rem;
+
+}
+
+
+.div__preco {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.div__preco>h3 {
+    font-weight: 600;
+    font-size: var(--font-2);
+    color: var(--color-grey-1);
+    line-height: 19px;
+}
+
+.div__preco>p {
+    font-weight: 500;
+    font-size: var(--font-3);
+    color: var(--color-grey-1);
+    line-height: 19px;
+
+}
+
+.barra__preco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container__produtos {
+    margin-top: 3.5rem;
+}
+
+.container__produtos>h3 {
+    font-weight: 600;
+    font-size: var(--font-2);
+    color: var(--color-grey-1);
+    line-height: 19px;
+}
+
+.container__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+}
+
+.lista__musicas {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 250px;
+    gap: 20px;
+    background-color: var(--color-grey-8);
+    margin-top: 2.5rem;
+    border-radius: var(--radius-1);
+}
+
+.lista__musicas>img {
+    width: 309px;
+    height: 113px;
+    border-radius: var(--radius-1);
+}
+
+.lista__musicas>h3 {
+    font-weight: 600;
+    font-size: var(--font-2);
+    color: var(--color-grey-1);
+    line-height: 19px;
+    margin-left: 1rem;
+
+}
+
+.descricao__produto {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 1rem;
+
+}
+
+.descricao__produto>p {
+    font-weight: 500;
+    font-size: var(--font-3);
+    color: var(--color-grey-1);
+    line-height: 19px;
+
+
+}
+
+.preco__produto {
+    display: flex;
+    gap: 160px;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+
+.preco__produto>span {
+    font-weight: 500;
+    font-size: var(--font-3);
+    color: var(--color-grey-1);
+    line-height: 19px;
+}
+
+.preco__produto>button {
+    border: 1px solid var( --color-grey-7);
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-7);
+    padding: 5px;
+
+}
